@@ -1,4 +1,4 @@
-# (c) @RoyalKrrishna
+# (c) @PredatorHackerzZ
 
 import asyncio
 from configs import Config
@@ -12,7 +12,7 @@ async def reply_forward(message: Message, file_id: int):
     try:
         link = await message.reply_text(
             f"**Here is Sharable Link of this file:**\n"
-            f"https://telegram.me/{Config.BOT_USERNAME}?start=RoyalKrrishna_{str_to_b64(str(file_id))}\n\n"
+            f"https://telegram.me/{Config.BOT_USERNAME}?start=KDramasFlix_{str_to_b64(str(file_id))}\n\n"
             f"__To Retrive the Stored File, just open the link!__",
             disable_web_page_preview=True, quote=True)
         await asyncio.sleep(1)
