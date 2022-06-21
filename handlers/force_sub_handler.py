@@ -29,10 +29,10 @@ async def handle_force_sub(bot: Client, cmd: Message):
         return 200
     try:
         user = await bot.get_chat_member(chat_id=channel_chat_id, user_id=cmd.from_user.id)
-        if user.status == "kicked":
+        if user.status == "banned":
             await bot.send_message(
                 chat_id=cmd.from_user.id,
-                text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/RoyalKrrishna).",
+                text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/+T7MJ8k1M2Ok0MmY1).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -63,7 +63,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Something went Wrong. Contact my [Support Group](https://t.me/RoyalKrrishna).",
+            text="Something went Wrong. Contact my [Support Group](https://t.me/+T7MJ8k1M2Ok0MmY1).",
             parse_mode="markdown",
             disable_web_page_preview=True
         )
